@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container-fluid wysiwyg-container py-3">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card commonRadius card-shadow">
+					<div class="row editor_toolbar px-2 mb-2">
+						<button class="btn-toolbar btn btn-sm mr-2" data-feature="bold"><i class="fas fa-bold"></i></button>
+						<button class="btn-toolbar btn btn-sm mr-2" data-feature="italic"><i class="fas fa-italic"></i></button>
+						<button class="btn-toolbar btn btn-sm mr-2" data-feature="createLink"><i class="fas fa-link"></i></button>
+						<button class="btn-toolbar btn btn-sm mr-2" data-feature="fontSize"><i class="fas fa-text-height"></i></button>
+						<button class="btn-color btn-round d-flex align-items-center btn btn-sm mr-2 border-thin" data-feature="fontColor">
+							<i class="fas fa-font mr-1"></i>
+							<input type="color" name="fontColor" id="fontColor" value="#555555">
+						</button>
+					
+						<button class="btn-toolbar btn btn-sm mr-2" data-feature="formatBlock" data-value='<H1>'><strong>H1</strong></button>
+						<button class="btn-toolbar btn btn-sm mr-2" data-feature="formatBlock" data-value='<H2>'><strong>H2</strong></button>
+						<button class="btn-toolbar btn btn-sm mr-2" data-feature="formatBlock" data-value='<H3>'><strong>H3</strong></button>
+					
+						<button class="btn-toolbar btn btn-sm mr-2" data-feature="insertOrderedList"><i class="fas fa-list-ol"></i></button>
+						<button class="btn-toolbar btn btn-sm mr-2" data-feature="insertUnorderedList"><i class="fas fa-list"></i></button>
+						<button class="btn-toolbar btn btn-sm mr-2" data-feature="insertImage"><i class="far fa-image"></i></button>
+					
+						<button class="btn-toolbar btn-round btn btn-sm mr-2 border-thin btn-mobile_view d-flex align-items-center">
+							<i class="fas fa-mobile-alt mr-2"></i>Mobile View
+						</button>
+					</div>
+					
+					<div class="row px-2 editor-wrapper mt-3">
+						<div class="editor_container">
+							<div class="row px-3">
+								<label for="plainText" class="ml-auto badge badge-secondary mb-0">Editor</label>
+							</div>
+							<textarea name="textEditor" id="textEditor" class="text_editor p-3 text-info" spellcheck="false"></textarea>
+						</div>
+						<div class="view_container">
+							<div class="row px-3">
+								<label for="plainText" class="badge badge-secondary mb-0">View</label>
+							</div>
+							<iframe id="parsedHtml" name="parsedHtml" class="parsed_html"></iframe>
+						</div>
+					</div>
+					<div class="row px-2 plain_text_wrapper mt-3">
+						<div class="row px-3">
+							<label for="plainText" class="ml-3 badge badge-secondary mb-0">Plain Text</label>
+						</div>
+						<textarea name="plainText" id="plainText" class="plain_text p-3 js-plain_text common-radius"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="/selector.js"></script>
+<script src="/main.js"></script>
+</html>
+
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<h4 class="mb-4">Compiler working for now</h4>
+
+<img src="https://i.ytimg.com/an_webp/NYALlC1U7bQ/mqdefault_6s.webp?du=3000&sqp=CPDr_eQF&rs=AOn4CLBEy1r-9YL0gUC8CVXEEnuz-Wsjww" style="border-radius: 25px"> -->
